@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "codebase-navigator"
+version = "0.1.0"
+description = "LangChain + Tavily powered codebase navigator and reviewer"
+authors = [{name = "Developer", email = "dev@example.com"}]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "langchain>=0.1.0",
+    "langchain-community>=0.0.20",
+    "langchain-openai>=0.0.8",
+    "chromadb>=0.4.22",
+    "tiktoken>=0.5.2",
+    "tavily-python>=0.3.0",
+    "gitpython>=3.1.40",
+    "typing-extensions>=4.8.0",
+    "pydantic>=2.5.0",
+    "python-dotenv>=1.0.0",
+    "fastapi>=0.104.0",
+    "uvicorn>=0.24.0",
+    "click>=8.1.7",
+    "rich>=13.7.0",
+    "aiofiles>=23.2.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/example/codebase-navigator"
+Repository = "https://github.com/example/codebase-navigator"
+
+[project.scripts]
+codebase-nav = "codebase_navigator.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["codebase_navigator*"]
