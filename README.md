@@ -18,9 +18,11 @@
 ### Installation
 
 ```bash
-# Clone and install
-git clone <repository-url>
+# Clone the repository
+git clone https://github.com/skkuhg/codebase-navigator.git
 cd codebase-navigator
+
+# Install the package
 pip install -e .
 
 # Set up environment variables
@@ -319,6 +321,14 @@ for file_path in large_file_list:
     response = agent.suggest_refactor(file_path, "performance")
     # Process in batches
 ```
+
+## 🔒 Security
+
+⚠️ **Important**: Never commit your `.env` file or expose your API keys!
+
+- The `.env` file is git-ignored by default
+- Use `.env.example` as a template
+- Keep your API keys secure and never share them publicly
 
 ## 🤝 Contributing
 
