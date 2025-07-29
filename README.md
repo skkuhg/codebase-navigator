@@ -37,7 +37,7 @@ cp .env.example .env
 OPENAI_API_KEY=your_openai_api_key_here
 
 # Required: Tavily API Key for web search  
-TAVILY_API_KEY=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
+TAVILY_API_KEY=your_tavily_api_key_here
 
 # Optional: GitHub token for private repos and higher rate limits
 GITHUB_TOKEN=your_github_token_here
