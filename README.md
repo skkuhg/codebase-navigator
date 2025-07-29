@@ -19,7 +19,7 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/skkuhg/Codebase-Navigator.git
+git clone https://github.com/skkuhg/Codebase-Navigator-RAG.git
 cd codebase-navigator
 
 # Install the package
